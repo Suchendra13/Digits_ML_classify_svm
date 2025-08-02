@@ -50,3 +50,6 @@ The following steps were performed to build and evaluate the Support Vector Mach
 ## 5. Results
 
 The Support Vector Machine model achieved the following performance on the test set:
+* **SVM Accuracy** : `0.9806`
+
+The classification report provides a detailed breakdown:
