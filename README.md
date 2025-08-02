@@ -52,4 +52,64 @@ The following steps were performed to build and evaluate the Support Vector Mach
 The Support Vector Machine model achieved the following performance on the test set:
 * **SVM Accuracy** : `0.9806`
 
-The classification report provides a detailed breakdown:
+Classification Report (SVM):
+               precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        36
+           1       0.97      1.00      0.99        37
+           2       1.00      0.97      0.99        35
+           3       1.00      0.97      0.99        37
+           4       1.00      0.94      0.97        36
+           5       0.97      1.00      0.99        36
+           6       1.00      0.97      0.99        36
+           7       0.97      0.97      0.97        36
+           8       0.95      1.00      0.97        35
+           9       0.95      0.97      0.96        36
+
+    accuracy                           0.98       360
+   macro avg       0.98      0.98      0.98       360
+weighted avg       0.98      0.98      0.98       360
+The confusion matrix visually confirms the model's performance, showing high counts along the diagonal (correct predictions) and low counts off-diagonal (misclassifications).
+
+## 6. Visualizations
+
+The project includes several visualizations to aid in understanding the data and model performance:
+
+* **Sample Digits from the Dataset**: A 5x5 grid of 25 sample handwritten digits, each labeled with its true class.
+* **Distribution of Digits (Classes)**: A bar plot showing the frequency of each digit (0-9) in the dataset, indicating a relatively balanced distribution.
+* **Distribution of All Pixel Intensity Values**: A histogram illustrating the distribution of pixel values across all images, helping to understand the range and commonality of intensities.
+* **Correlation Heatmap of Pixel Intensities**: A heatmap showing the pairwise correlation between the 64 pixel features. This can highlight how different parts of the image relate to each other.
+* **2D PCA of Digits Dataset**: A scatter plot of the data projected onto its first two principal components. Points are colored by their digit class, providing an insight into the linear separability of the classes in a reduced dimension.
+* **Confusion Matrix - SVM**: A heatmap displaying the confusion matrix, where rows represent true labels and columns represent predicted labels. Annotated cells show the count of instances, allowing for easy identification of classification errors.
+
+## 7. How to Run
+
+To execute this Jupyter Notebook:
+
+1.  **Clone the repository** (if you haven't already):
+    ```bash
+    git clone [https://github.com/Suchendra13/Digits_ML_classify_svm.git](https://github.com/Suchendra13/Digits_ML_classify_svm.git)
+    cd Digits_ML_classify_svm
+    ```
+2.  **Ensure you have Jupyter Notebook installed** or use a compatible IDE (e.g., VS Code with Jupyter extensions).
+3.  **Install the required Python libraries**:
+    ```bash
+    pip install pandas numpy matplotlib seaborn scikit-learn
+    ```
+4.  **Open the Jupyter Notebook**:
+    ```bash
+    jupyter notebook Digits_SVM.ipynb
+    ```
+5.  **Run all cells** in the notebook.
+
+## 8. Libraries Used
+
+* `pandas`
+* `numpy`
+* `matplotlib.pyplot`
+* `seaborn`
+* `sklearn` (specifically `datasets`, `model_selection`, `preprocessing`, `decomposition`, `linear_model`, `metrics`)
+
+## 9. Acknowledgements
+
+* The `load_digits` dataset is provided by scikit-learn.
