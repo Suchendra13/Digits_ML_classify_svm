@@ -69,6 +69,7 @@ Classification Report (SVM):
     accuracy                           0.98       360
    macro avg       0.98      0.98      0.98       360
 weighted avg       0.98      0.98      0.98       360
+
 The confusion matrix visually confirms the model's performance, showing high counts along the diagonal (correct predictions) and low counts off-diagonal (misclassifications).
 
 ## 6. Visualizations
