@@ -11,6 +11,7 @@
 6. [Visualisation](#visualisation)
 7. [How to Run](#how-to-run)
 8. [Libraries Used](#libraries-used)
+9. [Acknowledgements](#acknowledgemenets)
 
 ## 1. Project Overview 
 The primary goal of this project is to evaluate and implement Support Vector Machine for multi-class classification. We aim to correctly identify handwritten digits from a dataset of 8x8 pixel images. 
